@@ -1,0 +1,72 @@
+//** Author: Katherine Skipper; Date: 10/3/2019 **//
+(a)
+$ git push
+Enumerating objects: 9, done.
+Counting objects: 100% (9/9), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (7/7), 799 bytes | 399.00 KiB/s, done.
+Total 7 (delta 2), reused 0 (delta 0)
+remote: Resolving deltas: 100% (2/2), completed with 1 local object.
+To https://github.com/KatherineSkipper/assignment2.git
+   f4975e5..8139c4d  master -> master
+
+(b)
+There has been 9 commits made by everyone so far. I used the command:
+git rev-list --all --count
+
+(c)
+Wed Sep 25, 2019 at 6:13.30 pm is the date and time .gitignore was last modified.
+The time stamp given in results was: Wed Sep 25 18:13:30 2019. I used the command:
+git log .gitignore
+
+(d)
+Two reasons branches are used in a Git repository:
+1. Having a second branch off the main branch to use for developement is helpful.
+It is good to have a copy of a working version of the project as you make changes
+to the project. There will always be a working version of the project to fall back
+to if needed.
+2. A branch can also be helpful to complete experiments on without breaking currently
+working code.
+
+(e)
+The command "git log" returns the commit history with the commit ID/hash and who did
+what, when and why. It also references which branches master and HEAD are pointing to.
+In short, "git log" offers a list of what has been previously commited to the repository.
+Meanwhile, the "git status" command returns what branch you're currently on, how many
+commits it is ahead of the 'origin/master' branch, any files added to staging area, any
+files not tracked, and some hints as to nexts steps (such as publishing local commits,
+commiting files in staging area, and tracking untracked files).
+
+(f)
+"git log --name-only" is the command you would use to see where "Vehicle.h" was one of
+the commited files.
+
+(g)
+git log --grep="file" is the command you would use to find the commits whose message
+contains "file".
+
+(h)
+(I) Inheritance is a class adopting the features of another class. This is denoted by
+an "is a" relationship.
+(II) Polymorphism is when a class uses the same function(s) as the base class. The version of a
+function used is dependent on which object is called - one of base class or one of the subclasses.
+(III) Encapsulation is the act of grouping a bunch of data and functions together to form
+an object known as a class. Many objects in real life can be represented using encapsulation,
+such as a car.
+
+(i)
+Main differences between the Dictator and Lieutenants and Integration Manager Workflow: Developers in the
+first workflow can only push to a Lieutenant Repository, while those in the second workflow can only push
+to their own public repositories. Both the Lieutenant Repository of the second workflow and the Integration
+Manager of the first workflow fix and merge developers code, but a Lieutenant has code directly pushed by
+developers while an Integration Manager has to pull from the developers personal repositories. The Integration
+Manager of the second workflow can also push results directly to the central repository, where as the Lieutenant
+Repositories of the first workflow has to push to the Dictator Repository. The Dictator Repository is the one
+who pushes to the Central Repository in the first workflow.
+
+(j)
+It would probably be easier to combine code of a select group of developers than to have each developer fix and
+integrate every other developers code in a larger group. In the case of 100 members, it would be diffecult and
+time consuming on an individual developer to integrate and work on bugs of everyone's submitted code on top of
+working on any of his own code development.
