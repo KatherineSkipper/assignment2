@@ -70,3 +70,10 @@ It would probably be easier to combine code of a select group of developers than
 integrate every other developers code in a larger group. In the case of 100 members, it would be diffecult and
 time consuming on an individual developer to integrate and work on bugs of everyone's submitted code on top of
 working on any of his own code development.
+
+5.
+The Driving simulator is using both polymorphism and encapsulation. It is using polymorphism by subclasses such
+as Car, Bicycle and Skateboard using some virtual functions inherited from the superclass Vehicle - such as the 
+mileageEstimate() function. Encapsulation is used by data and functions being gathered to represent an  object.
+The Bicycle class uses encapsulation by having some data - brand, model, myGearCount - and functions - getBrand(),
+setMyGearCount() - to define what and how the object is to behave.
